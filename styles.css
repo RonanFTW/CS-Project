@@ -1,0 +1,189 @@
+.body {
+    display: grid;
+    background-color: slategray;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "a a a a"
+    "b b b b"
+    "c c c c"
+    "d d d d";
+    gap: 20px;
+}
+div {
+    background-color: gainsboro;
+    border: 10px solid snow;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a {
+    font-size: larger;
+}
+
+.header {
+    grid-area: a;
+    text-align: center;
+    border-radius: 25px;
+}
+.header:hover {
+    opacity: 0.9;
+    background-color: silver;
+    transition-duration: 1s;
+}
+
+.nav {
+    grid-area: b;
+    display: grid;
+    grid-template-areas: "ba b1 b2 b3";
+    gap: 5px;
+    background-color: silver;
+    border-radius: 25px;
+}
+.nava {
+    grid-area: ba;
+    text-align: center;
+    opacity: 0.9;
+    background-color: rgb(155, 181, 196);
+    text-decoration-thickness: 2px;
+    border: solid 10px snow;
+}
+.nava:hover {
+    background-color: gainsboro;
+    text-decoration-thickness: 2px;
+    text-decoration-line: underline;
+    border: double 10px;
+    transition: ease 1s;
+}
+.nav1 {
+    grid-area: b1;
+    text-align: center;
+    border: double 10px;
+    transition: ease 1s;
+}
+.nav1:hover {
+    opacity: 0.9;
+    background-color: rgb(155, 181, 196);
+    text-decoration-thickness: 2px;
+    text-decoration-line: underline;
+    border: solid 10px snow;
+}
+.nav2 {
+    grid-area: b2;
+    text-align: center;
+    border: double 10px;
+    transition: ease 1s;
+}
+.nav2:hover {
+    opacity: 0.9;
+    background-color: rgb(155, 181, 196);
+    text-decoration-thickness: 2px;
+    text-decoration-line: underline;
+    border: solid 10px snow;
+}
+.nav3 {
+    grid-area: b3;
+    text-align: center;
+    border: double 10px;
+    transition: ease 1s;
+}
+.nav3:hover {
+    opacity: 0.9;
+    background-color: rgb(155, 181, 196);
+    text-decoration-thickness: 2px;
+    text-decoration-line: underline;
+    border: solid 10px snow;
+}
+
+.main {
+    display: grid;
+    grid-area: c;
+    grid-template-columns: 150px auto auto 150px;
+    grid-template-rows: auto auto 400px auto;
+    grid-template-areas: 
+    "c1 c1 c1 c1"
+    "c3 c2 c2 c4"
+    "c3 c2 c2 c4";
+    background-color: silver;
+    border-radius: 25px;
+}
+.main1 {
+    grid-area: c1;
+    text-align: center;
+    transition: ease 0.5;
+}
+.main1:hover {
+    opacity: 0.9;
+    border: solid 10px lightslategray;
+    transition-duration: 0.5s;
+}
+.main2 {
+    grid-area: c2;
+    transition: ease 0.5;
+}
+.main2:hover {
+    opacity: 0.9;
+    border: solid 10px lightslategray;
+    transition-duration: 0.5s;
+}
+.main3 {
+    grid-area: c3;
+    transition: ease 0.5;
+}
+.main3:hover {
+    opacity: 0.9;
+    border: solid 10px lightslategray;
+    transition-duration: 0.5s;
+}
+.main4 {
+    grid-area: c4;
+    transition: ease 0.5;
+}
+.main4:hover {
+    opacity: 0.9;
+    border: solid 10px lightslategray;
+    transition-duration: 0.5s;
+}
+
+.footer {
+    grid-area: d;
+    border-radius: 25px;
+    text-align: center;
+}
+.footer:hover {
+    opacity: 0.9;
+    background-color: silver;
+    transition-duration: 1s;
+}
+
+@media screen and (max-width: 1000px) {
+    div {
+    background-color: gainsboro;
+    border: 5px solid snow;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    }
+    .body {
+    display: grid;
+    background-color: slategray;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "a a"
+    "b b"
+    "c c"
+    "d d";
+    gap: 5px;
+    }
+    .nav {
+        display: grid;
+        grid-template-areas:
+        "ba ba ba"
+        "b1 b2 b3";
+    }
+    .nava:hover {
+    opacity: 0.9;
+    background-color: silver;
+    transition-duration: 1s;
+    }
+}
